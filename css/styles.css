@@ -1,6 +1,33 @@
-*{
-    margin: 0;
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
 }
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
 body{
     font-family: serif;
     font-size: 14px;
@@ -14,15 +41,11 @@ a{
     color: black;
     
 }
-
-
 .container{
     min-height: 100%;
     display: grid;
-
+    box-sizing: border-box;
 }
-
-
 /* header */
 .header_container{
     background-color: #f5f5f5;
@@ -99,6 +122,9 @@ a{
 .info-search input{
     border: 2px lightgrey solid;
     border-radius: 5px;
+}
+.info-search input::placeholder{
+    padding-left: 10px;
 }
 .info-search button{
     border: none;
