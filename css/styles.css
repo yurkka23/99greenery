@@ -366,6 +366,7 @@ button{
 .slide img{
     max-width: 100%;
 }
+
 .slides-stars{
     margin: 2vw 0;
     justify-self: center;
@@ -379,6 +380,56 @@ button{
     color: rgb(101, 99, 99);
     text-decoration: underline;
 }
+.slides-stars{
+    font-size: 3vw;
+}
+.slides-stars:hover{
+    color: #a5823d;
+}
+
+.slide-pos{
+    position: relative;
+    overflow: hidden;
+}
+/*---------------------*/
+.overview{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(87, 133, 87);
+    opacity: 0.9;
+    padding: 2vw;
+    transform: translateY(101%);
+    transition: transform 0.7s ease-in;
+    max-height: 100%;
+    overflow: hidden;
+}
+.overview h4{
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+    padding-top: 3vw;
+}
+.overview p{
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 100;
+    padding-top: 2vw;
+}
+.overview button{
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 2vw;
+    padding-top: 1vw;
+}
+.slide-pos:hover .overview{
+    transform: translateY(0);
+}
+/*---------------------*/
 /*-----------------main-ideas-----------------------*/
 .main-ideas{
     display: grid;
