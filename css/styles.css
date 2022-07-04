@@ -63,6 +63,9 @@ button{
 .nav_container ul{
     display: flex;
 }
+.nav_container li:hover{
+    text-shadow: 1px 1px 2px gray;
+}
 .left{
     display: grid;
     grid-template-columns: minmax(50px, 120px) minmax(150px,500px);
@@ -147,9 +150,13 @@ button{
 .info h4{
     display: inline-block;
     color: #a5823d;
-    border-bottom: 3px solid #a5823d;
+    border-bottom: 1.5px solid #a5823d;
     margin-top: 2vw;
     font-size: 1.2vw;
+}
+.info-h4_gold:hover{
+    color: #c3a05a;
+    cursor: pointer;
 }
 .header-tranding{
     padding: 0 30px;
@@ -268,6 +275,9 @@ button{
     border-radius: 3px;
     font-size: 1.5vw;
     border: 2px solid #a5823d;
+}
+.main-started-btn:hover{
+   opacity: 0.6;
 }
 
 .main-join-now{
@@ -436,6 +446,9 @@ button{
 .tips-card_info p{
     font-size: 1.3vw;
 }
+.tips-card_info p:first-child:hover{
+    color: #009697;
+}
 .tips-card_info p:last-child{
     border-top: 1px solid rgb(180, 178, 178) ;
     color: rgb(138, 136, 136) ;
@@ -467,8 +480,11 @@ footer .footer_header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     border-bottom: 1px solid #d2d0d0;
+}
+.footer_body li:hover{
+    color: #a5823d;
 }
 .footer_body ul:nth-child(1) li{
     padding-bottom: 0.3vw;
@@ -483,6 +499,9 @@ footer ul .footer_list_header{
     color: #009697;
     font-weight: 600;
 }
+footer ul .footer_list_header:hover{
+    color: #009697;
+}
 .footer_bottom{
     padding: 3vw 0;
 }
@@ -492,5 +511,5 @@ footer ul .footer_list_header{
 }
 .footer_bottom li{
     color: #d2d0d0;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
 }
