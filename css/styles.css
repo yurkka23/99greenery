@@ -365,5 +365,85 @@ a{
 .p_underline{
     color: rgb(101, 99, 99);
     text-decoration: underline;
+}
+/*-----------------main-ideas-----------------------*/
+.main-ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 60vw;
+    border-top: 1px solid rgb(180, 178, 178) ;
+}
+.main-ideas-card{
+    position: relative;
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+.main-ideas-card::after{
+    content: "";
+    background: url(/img/violets.jpg);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.main-ideas-card h3{
+    color: #009697;
+    font-weight: 600;
+    font-size: 2.2vw;
+    margin-bottom: 1.5vw;
+}
+.main-ideas-card p{
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+.main-ideas-btn{
+    color: #a5823d;
+    font-size: 2.4vw;
+    background-color: transparent;
+    border-bottom: 2px dotted #a5823d;
+    width: 12vw;
+    justify-self: center;
+    padding-bottom: .4vw;
+}
 
+.main-ideas__tips{
+    border-left: 1px solid rgb(180, 178, 178) ;
+}
+.main-ideas__tips h4{
+    font-size: 1.9vw;
+    font-weight: 600;
+    padding:1.5vw 0;
+    padding-left: 1vw;
+}
+.tips_card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 3vw;
+}
+.tips-card_info{
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+}
+.tips-card_info p{
+    font-size: 1.3vw;
+}
+.tips-card_info p:last-child{
+    border-top: 1px solid rgb(180, 178, 178) ;
+    color: rgb(138, 136, 136) ;
+}
+.tips_card-img{
+    width: 6vw;
+    align-self: center;
+    justify-self: center;
+}
+.tips_card-img img{
+    max-width: 100%;
+    height: 7vw;
+    object-fit: contain;
+    object-position: center;
 }
